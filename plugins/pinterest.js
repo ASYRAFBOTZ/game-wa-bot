@@ -9,7 +9,7 @@ Contoh *${usedPrefix}${command} Minecraft|1*`
       jumlah = 1
       m.reply('Untuk jumlah yang lebih banyak,  anda harus menjadi member *premium!!*')
   } 
-  let res = await fetch(global.API('zekz', '/api/pinimg', { q: query }))
+  let res = await fetch(global.API('bg', 'pins', { q: query }))
   let json = await res.json()
   if (json.status !== true) throw json
   for (let i = 0; i < jumlah; i++) {
